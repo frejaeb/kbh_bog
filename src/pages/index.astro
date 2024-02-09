@@ -4,24 +4,23 @@ import Button from '../components/Button.astro';
 ---
 <MainLayout title="Titel">
 	<article>
-		
-		<section  class="grid md:grid-cols-2 border-8">
+		<h1 class="text-5xl font-bold">Københavnerbilleder</h1>
+		<section  class="grid md:grid-cols-2 border-8" id="herounit">
 			<div>
-				
 				<img src="public/billeder/kobenhavnerbilleder-sten-simons.jpg" alt="">
 			</div>
 			<div class="p-8 grid content-center">
-				<h1>Københavnerbilleder</h1>
-				<h2>En guide til hipster foto af Sten Simons</h2>	
+				
+				<h2 class="text-4xl font-bold">En guide til hipster foto af Sten Simons</h2>	
 				<p>Københavnerbilleder er de danske streetfotografers bibel: Det er en fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle væsentlige aspekter af streetfotografering fra grundlæggende teknik til kreative eksperimenter. Alt sammen krydret med masser af inspirerende fotos. God læselyst!	</p>
 				
 				<button>knap</button>
 			</div>
 		</section>
 
-		<section>	
+		<section id="bogen">	
 			<article >
-				<h2 class="text-4xl">Quickfacts om bogen</h2>
+				<h2 class="text-4xl font-bold">Quickfacts om bogen</h2>
 				<ul>
 					<li>Titel: Københavnerbilleder - en guide til hipster foto</li>
 					<li>Forfatter: Sten Simons</li>
@@ -99,24 +98,27 @@ import Button from '../components/Button.astro';
 			</div>
 		</section>
 
-		<section>overskrift og galleri</section>
+		<section id="galleri">overskrift og galleri
+
+
+		</section>
 
 
 		<section id="forfatteren" class="grid lg:grid-cols-2 mt-32 max-w-3xl mx-auto gap-6"> 
 			<div>
-				<img src="" alt="">
+				<img src="public/billeder/sten_simons.jpg" alt="forfatter">
 			</div>
 			<article class="">
-				<h2 class="text-4xl">Forfatteren</h2>
+				<h2 class="text-4xl font-bold">Forfatteren</h2>
 				<p>Sten Simons har en lang foto-karriere bag sig. Det hele startede i 00’erne, da han gik rundt i Pisserenden for at fotografere ungdommens forfald. Det ledte til en række udstillinger, og blev senere til hans først fotobog “Ungdomsdruk - pinlige billeder fra nattelivet.”</p>
 				<p>Derefter tog karrieren fart: Han blev fotojournalist og dokumenterede en masse dagligdagsstof fra Amager på dagbladet “Amagerkaneren.” Sideløbende begyndte han at undervise i foto, og har skrevet et utal af bøger, herunder bestsellerne Scener fra S-toget, Brun mad - en visuel odysse, og lærebogen Fotografering for evnesvage.</p>		
 			</article>
 		</section>
 
 		
-		<section class="max-w-lg mx-auto bg-lime-100 p-4"> <!-- section til forms -->
+		<section class="max-w-lg mx-auto bg-lime-100 p-4" id="form"> <!-- section til forms -->
 			
-		<h1>køb bogen</h1>
+		<h1 class="text-4xl font-bold">køb bogen</h1>
 		<form action="">
 		<div>
 				<label for="antal">Antal:</label>

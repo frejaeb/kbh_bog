@@ -7,10 +7,10 @@
         </div>
         <nav id="desktopmenu" class="hidden lg:block">
             <ul class="flex flex-row gap-4">
-                <li class=""><a href="#link1">Link 1</a></li>
-                <li class=""><a href="#link2">Link 2</a></li>
-                <li class=""><a href="#link3">Link 3</a></li>
-                <li class=""><a href="#link4">Link 4</a></li>
+                <li class=""><a href="#herounit">Top</a></li>
+                <li class=""><a href="#bogen">Bogen</a></li>
+                <li class=""><a href="#galleri">Galleri</a></li>
+                <li class=""><a href="#form">Bestil</a></li>
             </ul>
         </nav>
         <button id="burgermenu" class="lg:hidden" x-on:click="showmenu = ! showmenu">Menu</button>
@@ -18,10 +18,10 @@
     <nav id="mobilmenu" class="flex flex-col content-center pt-4" 
     x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
         <ul >
-            <li class="text-center py-2 border-y-2"><a href="#link1">Link 1</a></li>
-            <li class="text-center py-2 border-b-2"><a href="#link2">Link 2</a></li>
-            <li class="text-center py-2 border-b-2"><a href="#link3">Link 3</a></li>
-            <li class="text-center py-2 border-b-2"><a href="#link4">Link 4</a></li>
+            <li class="text-center py-2 border-y-2"><a href="#herounit">Top</a></li>
+            <li class="text-center py-2 border-b-2"><a href="#bogen">Bogen</a></li>
+            <li class="text-center py-2 border-b-2"><a href="#galleri">Galleri</a></li>
+            <li class="text-center py-2 border-b-2"><a href="#form">Bestil</a></li>
         </ul>
     </nav>
 </div>
