@@ -4,7 +4,7 @@ import Button from '../components/Button.astro';
 ---
 <MainLayout title="Titel">
 	<article>
-		<h1 class="text-5xl font-bold">Københavnerbilleder</h1>
+		<h1 class="text-5xl font-bold my-8">Københavnerbilleder</h1>
 		<section  class="grid md:grid-cols-2 border-8" id="herounit">
 			<div>
 				<img src="public/billeder/kobenhavnerbilleder-sten-simons.jpg" alt="">
@@ -13,13 +13,15 @@ import Button from '../components/Button.astro';
 				
 				<h2 class="text-4xl font-bold">En guide til hipster foto af Sten Simons</h2>	
 				<p>Københavnerbilleder er de danske streetfotografers bibel: Det er en fusion mellem et kunstværk og en lærebog. Bogen gennemgår alle væsentlige aspekter af streetfotografering fra grundlæggende teknik til kreative eksperimenter. Alt sammen krydret med masser af inspirerende fotos. God læselyst!	</p>
+				<div  class="mt-8">
+				<Button>Køb bogen</Button>	
+				</div>
 				
-				<button>knap</button>
 			</div>
 		</section>
 
-		<section id="bogen">	
-			<article >
+		<section class="mt-8 flex place-content-center" id="bogen">	
+			<article>
 				<h2 class="text-4xl font-bold">Quickfacts om bogen</h2>
 				<ul>
 					<li>Titel: Københavnerbilleder - en guide til hipster foto</li>
@@ -75,9 +77,13 @@ import Button from '../components/Button.astro';
 					<p>Street foto handler om at fotografere livet på gaden - men tør du at gå helt tæt på fremmede mennesker og knipse løs? Du kan lige så godt øve dig, for det er det der vil gøre dig til en bedre street-fotograf…</p>
 				</article>			
 				</div>
+				<div class="mt-8">
+				<Button>Download</Button>	
+				</div>
+				
 		</section>
 
-		<section class="mt-32">
+		<section class="mt-32 mb-8">
 			<h2 class="text-4xl font-bold">Anmeldelser</h2>
 			<div class="grid grid-cols-1 lg:grid-cols-3 mx-auto gap-4">
 				<article class="prose mb-6">
@@ -98,8 +104,28 @@ import Button from '../components/Button.astro';
 			</div>
 		</section>
 
-		<section id="galleri">overskrift og galleri
-
+		<section class="columns-2 lg:columns-4" id="galleri">
+		<img src="public/img_bog/0008.jpg" alt="">
+		<img src="public/img_bog/agfa-genanvendeligt-kamera-35mm-5.jpg" alt="">
+		<img src="public/img_bog/agfa-genanvendeligt-kamera-35mm-8.jpg" alt="">
+		<img src="public/img_bog/agfa-genanvendeligt-kamera-35mm-11.jpg" alt="">
+		<img src="public/img_bog/agfa-genanvendeligt-kamera-35mm-film-2-5.jpg" alt="">
+		<img src="public/img_bog/agfa-genanvendeligt-kamera-35mm-film-2-7.jpg" alt="">
+		<img src="public/img_bog/amarminoen-med-et-agfa-le-box-3.jpg" alt="">
+		<img src="public/img_bog/amarminoen-med-et-agfa-le-box-11.jpg" alt="">
+		<img src="public/img_bog/amarminoen-med-et-agfa-le-box-12.jpg" alt="">
+		<img src="public/img_bog/anamorfiske-landskaber-amager-faelled-4.jpg" alt="">
+		<img src="public/img_bog/foraar-med-et-agfa-lebox-2-20.jpg" alt="">
+		<img src="public/img_bog/kbh-by-night-3.jpg" alt="">
+		<img src="public/img_bog/lomo-smena-15.jpg" alt="">
+		<img src="public/img_bog/lomo-smena-17.jpg" alt="">
+		<img src="public/img_bog/lomo-smena-20.jpg" alt="">
+		<img src="public/img_bog/nikkormat-ft2-orestad-c-6.jpg" alt="">
+		<img src="public/img_bog/nikkormat-ft2-remiseparken-2.jpg" alt="">
+		<img src="public/img_bog/nikkormat-ft2-remiseparken-7.jpg" alt="">
+		<img src="public/img_bog/orestad-til-islands-brygge-pentax-auto-110-8.jpg" alt="">
+		<img src="public/img_bog/orestad-til-islands-brygge-pentax-auto-110-8.jpg" alt="">
+		<img src="public/img_bog/orestad-til-islands-brygge-pentax-auto-110-12.jpg" alt="">
 
 		</section>
 
@@ -108,7 +134,7 @@ import Button from '../components/Button.astro';
 			<div>
 				<img src="public/billeder/sten_simons.jpg" alt="forfatter">
 			</div>
-			<article class="">
+			<article class="grid content-center">
 				<h2 class="text-4xl font-bold">Forfatteren</h2>
 				<p>Sten Simons har en lang foto-karriere bag sig. Det hele startede i 00’erne, da han gik rundt i Pisserenden for at fotografere ungdommens forfald. Det ledte til en række udstillinger, og blev senere til hans først fotobog “Ungdomsdruk - pinlige billeder fra nattelivet.”</p>
 				<p>Derefter tog karrieren fart: Han blev fotojournalist og dokumenterede en masse dagligdagsstof fra Amager på dagbladet “Amagerkaneren.” Sideløbende begyndte han at undervise i foto, og har skrevet et utal af bøger, herunder bestsellerne Scener fra S-toget, Brun mad - en visuel odysse, og lærebogen Fotografering for evnesvage.</p>		
@@ -116,13 +142,13 @@ import Button from '../components/Button.astro';
 		</section>
 
 		
-		<section class="max-w-lg mx-auto bg-lime-100 p-4" id="form"> <!-- section til forms -->
+		<section class="max-w-lg mx-auto my-8 " id="form"> <!-- section til forms -->
 			
-		<h1 class="text-4xl font-bold">køb bogen</h1>
+		<h1 class="text-4xl font-bold">Køb bogen</h1>
 		<form action="">
 		<div>
 				<label for="antal">Antal:</label>
-				<input type="number" name="antal" id="antal">
+				<input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" type="number" name="antal" id="antal">
 		</div>
 		<div>
 				<label for="levering">Levering:</label>
@@ -130,28 +156,28 @@ import Button from '../components/Button.astro';
 				<input type="radio"  name="afhent" id="afhent"><label for="afhent">Afhent selv </label>
 		</div>
 		<div>
-			<label for="navn">Navn</label> <input type="text" name="navn" id="navn">
+			<label for="navn">Navn</label> <input placeholder="Navn" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" type="text" name="navn" id="navn">
 		</div>
 		<div>
-			<label for="adr">Adresse</label> <input type="text" name="adr" id="adr">
+			<label for="adr">Adresse</label> <input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" type="text" name="adr" id="adr">
 		
 		</div>
 		<div>
 			<!-- denne syntaks i alle med label og ife navn  -->
-			<label for="email">Email</label><input type="email" name="email" id="email">
+			<label for="email">Email</label><input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" type="email" name="email" id="email">
 		</div>
 		<div>
-			<label for="postby">Postnummer og by</label><input type="text" name="postby" id="postby">
+			<label for="postby">Postnummer og by</label><input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" type="text" name="postby" id="postby">
 		
 		</div>
 		<div>
-			<label for="tel">Telefon</label> <input type="tel" name="tel" id="tel">
+			<label for="tel">Telefon</label> <input class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50" type="tel" name="tel" id="tel">
 		</div>
 		<div>
-		<input type="checkbox" name="nyhedbrev" id="nyhedbrev"> <label for="nyhedbrev">Ja til nyhedbrev og tilbud</label>
+		<input class="inline-flex items-center" type="checkbox" name="nyhedbrev" id="nyhedbrev"> <label for="nyhedbrev">Ja til nyhedbrev og tilbud</label>
 		</div>
-		<div>
-			<button>Til betaling</button>
+		<div  class="mt-8">
+			<Button>Til betaling</Button>
 		</div>
 
 	</section>
